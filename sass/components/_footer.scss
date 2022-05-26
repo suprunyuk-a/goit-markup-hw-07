@@ -1,0 +1,33 @@
+/*Нижний колонтитул*/
+.footer {
+    background-color: ($back-color-ef);
+  }
+  .adress {
+    padding: 60px 0px;
+  }
+  .cont-footer {
+    display: flex;
+  }
+  .adr-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  .footer .footer-logo {
+    color: $white-color;
+  }
+  .footer .footer-adress {
+    list-style-type: none;
+    padding-top: 20px;
+    margin-right: 70px;
+  }
+  .footer .link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $white-color;
+  }
+  .footer .telmail {
+    color: ($telmail);
+  }

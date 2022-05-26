@@ -756,7 +756,6 @@ h4 {
   position: absolute;
   top: 50%;
   left: 13px;
-  color: var(--head-color);
   fill: currentColor;
   transform: translateY(-50%);
 

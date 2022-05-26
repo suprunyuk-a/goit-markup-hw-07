@@ -1,0 +1,61 @@
+    /*Основное для страницы*/
+    html {
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ul {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      ul {
+        padding-left: 0;
+      }
+      
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      
+      .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+      }
+      
+      .list,
+      .main .company-list,
+      .task-list,
+      .company-title,
+      .clients-title,
+      .gallery {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .sect-task {
+        padding-top: 0px;
+      }
+      .body {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: $title-color;
+      }
+      .body .button {
+        cursor: pointer;
+        border: none;
+      }
