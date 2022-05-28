@@ -1,0 +1,117 @@
+/*Особенности и команда*/
+.cont-feature {
+  display: flex;
+}
+.feature-title-item {
+  width: 270px;
+}
+.feature-title-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main .feature {
+  list-style-type: none;
+}
+.feature .feature-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: ($head-color);
+}
+.feature .feature-text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.team-plus {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: ($head-color);
+}
+
+.task-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.task-item:not(:last-child) {
+  margin-right: 30px;
+}
+.main .company {
+  background-color: ($back-company);
+}
+.company .company-party {
+  padding-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: ($head-color);
+}
+.company .company-post {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.item-team {
+  background-color: ($white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.company-social-list {
+  display: flex;
+  justify-content: center;
+}
+.company-link-social {
+  fill: ($color-icon);
+}
+.company-social-list {
+  margin-top: 16px;
+}
+.company-link-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: ($white-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.company-link-social:hover,
+.company-link-social:focus {
+  background-color: ($hover-color);
+  fill: ($white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}

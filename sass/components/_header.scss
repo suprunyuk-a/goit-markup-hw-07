@@ -1,89 +1,84 @@
-      /*Шапка страницы*/
-  .header {
-    border-bottom: 1px solid ($border-color);
-  }
-  
-  .body .header {
-    background-color: $white-color;
-  }
+/*Шапка страницы*/
+.header {
+  border-bottom: 1px solid ($border-color);
+}
 
-    .cont-nav {
-        display: flex;
-        align-items: center;
-      }
-      .logo {
-        margin-right: 93px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        font-family: Raleway, sans-serif;
-        font-weight: 700;
-        text-decoration: none;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        color: $black-color;
-      }
-      .logo-web {
-        color: $hover-color;
-      }
-      .nav-page,
-      .nav-contact {
-        display: flex;
-        list-style-type: none;
-        margin-left: auto;
-      
-        font-weight: 500;
-        font-size: 14px;
-      }
-      
-      .nav-page .item:not(:last-child),
-      .nav-contact .item:not(:last-child) {
-        margin-right: 50px;
-      }
-      
-      .nav-page .link {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        position: relative;
-        text-decoration: none;
-        color: ($head-color);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .nav-contact .link {
-        padding-top: 30px;
-        padding-bottom: 30px;
-      
-        text-decoration: none;
-        color: $title-color;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .nav-page .link.current {
-        color: $hover-color;
-      }
-      .nav-page .link.current::after {
-        content: '';
-      
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-      
-        width: 100%;
-        height: 4px;
-      
-        background-color: $hover-color;
-        border-radius: 2px;
-      }
-      
-      .filter .button-filt.current {
-        background-color: $hover-color;
-        color: $white-color;
-      }
-      .nav-page .link:hover,
-      .nav-page .link:focus,
-      .nav-contact .link:hover,
-      .nav-contact .link:focus,
-      .footer .link:hover {
-        color: $hover-color;
-        fill: $hover-color;
-      }
-      
+.body .header {
+  background-color: $white-color;
+}
+
+.cont-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-page,
+.nav-contact {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-page .item:not(:last-child),
+.nav-contact .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-page .link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  text-decoration: none;
+  color: ($head-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-contact .link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-decoration: none;
+  color: $title-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-page .link.current {
+  color: $hover-color;
+}
+.nav-page .link.current::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: $hover-color;
+  border-radius: 2px;
+}
+
+.filter .button-filt.current {
+  background-color: $hover-color;
+  color: $white-color;
+}
+.nav-page .link:hover,
+.nav-page .link:focus,
+.nav-contact .link:hover,
+.nav-contact .link:focus,
+.footer .link:hover {
+  color: $hover-color;
+  fill: $hover-color;
+}
+
+.contact-envelope,
+.contact-phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+}
