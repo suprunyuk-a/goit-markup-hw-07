@@ -152,19 +152,6 @@
     cursor: pointer;
   }
 
-  &__input {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
-
   &__icon--checked {
     position: absolute;
     top: 0;
@@ -201,22 +188,35 @@
     text-decoration-line: underline;
   }
 
-  &:checked + &__icon--checked {
-    transform: scale(1);
-    opacity: 1;
-  }
+  &__input {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 
-  &:checked ~ &__icon--unchecked {
-    border-color: $hover-color;
-  }
+    &:checked + .checkbox__icon--checked {
+      transform: scale(1);
+      opacity: 1;
+    }
 
-  &:focus ~ &__icon--unchecked,
-  &:hover ~ &__icon--unchecked {
-    border-color: $hover-color;
-  }
+    &:checked ~ .checkbox__icon--unchecked {
+      border-color: $hover-color;
+    }
 
-  &:focus:checked ~ &__icon--unchecked,
-  &:hover:checked ~ &__icon--unchecked {
-    border-color: $hover-color;
+    &:focus ~ .checkbox__icon--unchecked,
+    &:hover ~ .checkbox__icon--unchecked {
+      border-color: $hover-color;
+    }
+
+    &:focus:checked ~ .checkbox__icon--unchecked,
+    &:hover:checked ~ .checkbox__icon--unchecked {
+      border-color: $hover-color;
+    }
   }
 }
