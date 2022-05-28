@@ -32,6 +32,10 @@
     0px 2px 2px ($shadow-filt012);
   color: ($white-color);
 }
+.filter .button-filt.current {
+  background-color: $hover-color;
+  color: $white-color;
+}
 /*Работы*/
 .gallery {
   display: flex;

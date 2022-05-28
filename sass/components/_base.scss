@@ -1,4 +1,3 @@
-/*Основное для страницы*/
 html {
   box-sizing: border-box;
 }
@@ -6,6 +5,13 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $title-color;
 }
 
 .container {
@@ -33,10 +39,4 @@ html {
 
 .sect-task {
   padding-top: 0px;
-}
-.body {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: $title-color;
 }
