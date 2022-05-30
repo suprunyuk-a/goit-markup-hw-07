@@ -1,6 +1,15 @@
 /*Нижний колонтитул*/
 .footer {
   background-color: $back-color-ef;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $white-color;
+  }
 }
 
 .adress {
@@ -13,15 +22,6 @@
 
 .content {
   padding-top: 72px;
-}
-
-.footer_title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-style: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  color: $white-color;
 }
 
 .footer-adress {
@@ -51,7 +51,7 @@
   }
 }
 
-.footer_connect {
+.footer-connect {
   margin-top: 72px;
   margin-left: 93px;
 

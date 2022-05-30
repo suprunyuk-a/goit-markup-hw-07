@@ -26,12 +26,12 @@
   display: flex;
   padding: 10px 62px 10px 29px;
   margin-left: 12px;
+}
 
-  &__icon {
-    position: absolute;
-    right: 28px;
-    fill: white;
-  }
+.button-footer-icon {
+  position: absolute;
+  right: 28px;
+  fill: white;
 }
 
 .button-modal {

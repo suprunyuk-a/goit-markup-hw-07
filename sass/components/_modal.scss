@@ -152,7 +152,7 @@
     cursor: pointer;
   }
 
-  &__icon--checked {
+  &__icon-checked {
     position: absolute;
     top: 0;
     left: 0;
@@ -163,7 +163,7 @@
     transition: transform $animation, opacity $animation;
   }
 
-  &__icon--unchecked {
+  &__icon-unchecked {
     position: absolute;
     top: 0;
     left: 0;
@@ -200,22 +200,22 @@
     clip-path: inset(50%);
     margin: -1px;
 
-    &:checked + .checkbox__icon--checked {
+    &:checked + .checkbox__icon-checked {
       transform: scale(1);
       opacity: 1;
     }
 
-    &:checked ~ .checkbox__icon--unchecked {
+    &:checked ~ .checkbox__icon-unchecked {
       border-color: $hover-color;
     }
 
-    &:focus ~ .checkbox__icon--unchecked,
-    &:hover ~ .checkbox__icon--unchecked {
+    &:focus ~ .checkbox__icon-unchecked,
+    &:hover ~ .checkbox__icon-unchecked {
       border-color: $hover-color;
     }
 
-    &:focus:checked ~ .checkbox__icon--unchecked,
-    &:hover:checked ~ .checkbox__icon--unchecked {
+    &:focus:checked ~ .checkbox__icon-unchecked,
+    &:hover:checked ~ .checkbox__icon-unchecked {
       border-color: $hover-color;
     }
   }
